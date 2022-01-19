@@ -12,7 +12,6 @@ const Layout = (props: Props): React.Node => (
   <>
     <IconDefinitions />
     <Hamburger />
-    <Header withHeadline />
     <main className="wrap">{props.children}</main>
     <Footer />
   </>

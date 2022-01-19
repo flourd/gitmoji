@@ -4,11 +4,9 @@ import React, { type Node } from 'react'
 import Layout from 'src/components/Layout'
 import theme from 'src/utils/theme/theme.css'
 
-type Props = { Component: typeof React.Component, pageProps: Object }
-
-const App = (props: Props): Node => (
+const App = ({ Component, pageProps } = {}) => (
   <Layout>
-    <props.Component {...props.pageProps} />
+    <Component {...pageProps} />
   </Layout>
 )
 
